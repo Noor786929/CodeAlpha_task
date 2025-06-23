@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="new.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="people">People</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image" data-category="nature"><img src="n.jpg" alt="Nature 1" /></div>
+    <div class="image" data-category="city"><img src="city1.jpg" alt="City 1" /></div>
+    <div class="image" data-category="people"><img src="apj1.jpg" alt="people 1" /></div>
+    <div class="image" data-category="nature"><img src="new1.jpg" alt="Nature 2" /></div>
+    <div class="image" data-category="city"><img src="city2.jpg" alt="City 2" /></div>
+    <div class="image" data-category="people"><img src="apj2.jpg" alt="people 2" /></div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Preview" />
+    <div class="controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
